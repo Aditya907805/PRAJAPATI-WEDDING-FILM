@@ -132,7 +132,7 @@ fun HomeScreen(onGallery:()->Unit,onContact:()->Unit) {
     Spacer(Modifier.height(22.dp))
     GoldButton("EXPLORE OUR WORK",onGallery)
     Spacer(Modifier.height(10.dp))
-    OutlinedButton(onClick=onContact,border=ButtonDefaults.outlinedButtonBorder,
+    OutlinedButton(onClick=onContact,border=androidx.compose.foundation.BorderStroke(1.dp,Gold),
         colors=ButtonDefaults.outlinedButtonColors(contentColor=Gold),modifier=Modifier.fillMaxWidth()) {
         Text("BOOK YOUR DATE")
     }
